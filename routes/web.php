@@ -21,5 +21,7 @@ $app->post('api/login','UserController@login');
 
 
 $app->group(['middleware' => 'checking'], function () use ($app) {
-    $app->post('api/list_investment_provider','InvestmentController@list_provider');
+    $app->post('api/list_investment_providers','InvestmentController@list_providers');
+    $app->post('api/list_products','InvestmentController@list_products');
+    
 });
