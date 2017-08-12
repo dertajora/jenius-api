@@ -1,3 +1,3 @@
-# Digilib Cafe #
+# Name Project to Be Defined #
 ## Project Description ##
-This API developed for DigilibCafe mobile application. Digilib Cafe is mobile application that allow user to order food and beverages or book a room in Digilib Cafe Yogyakarta. 
+This API developed for Jenius mobile application. Jenius is mobile application that allow user to plan and organize their detailed dream and manage their investment in a seamless way.
