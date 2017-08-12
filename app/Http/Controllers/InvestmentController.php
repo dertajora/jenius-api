@@ -31,11 +31,18 @@ class InvestmentController extends Controller
         return response()->json(['result_code' => 1, 'result_message' => 'Data list investment provider sent!', 'data' => $providers]);
     }
 
+    public function list_investment(Request $request){
+        Log::info('Request My List Investment Provider');
+    }
+
     public function check_status($provider_id){
+        if ($provider_id == 5) {
+            return "Always Open";
+        }
         $product_open = InvestmentProduct::where('status',1)->where('provider_id',$provider_id)->count();
 
         if ($product_open > 0 ) {
-            return "Currently Open";
+            return "Now Open";
         }
 
         $product_coming_soon = InvestmentProduct::where('status',0)->where('provider_id',$provider_id)->orderBy('open_at','asc')->select('open_at')->first();
@@ -65,7 +72,7 @@ class InvestmentController extends Controller
             if ($row->status == 0) {
                 $row->status = "Open on ".date('d F Y', strtotime($row->open_at));
             }elseif ($row->status == 1) {
-                $row->status = "Currently Open";
+                $row->status = "Now Open";
             }elseif ($row->status) {
                 $row->status = "Closed";
             }
