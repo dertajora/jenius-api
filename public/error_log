@@ -1,0 +1,4 @@
+[29-Jul-2017 13:51:32 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home/digilibc/public_html/digilibcafe-api/vendor/illuminate/support/helpers.php on line 510
+[29-Jul-2017 13:51:45 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home/digilibc/public_html/digilibcafe-api/vendor/illuminate/support/helpers.php on line 510
+[29-Jul-2017 13:53:20 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home/digilibc/public_html/digilibcafe-api/vendor/illuminate/support/helpers.php on line 510
+[29-Jul-2017 13:54:07 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home/digilibc/public_html/digilibcafe-api/vendor/illuminate/support/helpers.php on line 510
